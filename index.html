@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science & ML Portfolio</title>
+    <!-- Orbitron Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #191414; /* Spotify Black */
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1DB954; /* Spotify Green */
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #1DB954; /* Green logo/title */
+            font-family: 'Orbitron', sans-serif; /* Robotic/Techno font */
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff; /* White on hover */
+        }
+
+        /* Hero Section with Circular Photo */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            background-color: #191414; /* Black background */
+            padding: 0 20px;
+            text-align: left;
+            gap: 40px; /* Adds space between the image and text */
+        }
+
+        /* Hero content container (for the text and button) */
+        .hero-content {
+            max-width: 60%; /* Adjust text width if needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            color: #1DB954; /* Spotify Green */
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #b3b3b3; /* Lighter text for description */
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #1DB954; /* Spotify Green */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-start; /* Align button to the left */
+        }
+
+        .hero button:hover {
+            background-color: #1ed760; /* Slightly lighter green on hover */
+        }
+
+        /* Circular Image Styling */
+        .hero img {
+            width: 200px; /* Adjust the size as needed */
+            height: 200px;
+            border-radius: 50%; /* Circular effect */
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 16px;
+            color: #f2e6d9; /* Bone color for Data Science & ML Portfolio */
+        }
+
+        /* Social Media Icons Section with Bone Background */
+        .social-section {
+            background-color: #f2e6d9; /* Bone-colored background */
+            padding: 20px 40px;
+            border-radius: 15px; /* Smooth edges */
+            margin: 20px 0;
+            display: inline-block;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between icons */
+        }
+
+        .social-icons a {
+            color: #191414; /* Set the initial color (Spotify black) */
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #1DB954; /* Change to Spotify green on hover */
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; /* Ensures icons are not stretched */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero img {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .hero button {
+                font-size: 16px;
+            }
+
+            .social-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Data Science & ML Portfolio</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="projects.html">Projects</a> <!-- Link to new projects page -->
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="images/m1.png" alt="Your Photo"> <!-- Image on the left side -->
+    
+    <div class="hero-content">
+        <h2>Welcome to My Data Science & ML Portfolio</h2>
+        <p>Hello visitor! I am Mustafa Ercengiz, a tech lover, management engineering student from Istanbul. Currently focused on Machine Learning. If you want to see my projects, click the button below. You can reach me via the platforms at the bottom.</p>
+        <button onclick="window.location.href='projects.html'">See My Projects</button>
+    </div>
+</section>
+
+<footer>
+    <p>Data Science & ML Portfolio - Showcasing Data Science and ML projects.</p>
+
+    <!-- Social Media Section with Bone-colored Background -->
+    <div class="social-section">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mustafa-ercengiz-93922519a/" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/MUSERC" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+    
+            </a>
+        </div>
+    </div>
+
+    <p>Navigation: <a href="#about">About Me</a> | <a href="projects.html">Projects</a></p>
+</footer>
+
+</body>
+</html>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Data Science & ML Portfolio</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #191414; /* Spotify Black */
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1DB954; /* Spotify Green */
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #1DB954; /* Green logo/title */
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: #111;
+            padding: 60px 20px;
+        }
+
+        .projects h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #1DB954;
+        }
+
+        .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .project-item {
+            background-color: #222;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #1DB954;
+        }
+
+        .project-item p {
+            font-size: 16px;
+            color: #b3b3b3;
+        }
+
+        .project-item:hover {
+            background-color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 16px;
+            color: #b3b3b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .projects-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .project-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Data Science & ML Portfolio</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-item">
+            <img src="project1.jpg" alt="Project 1 Image">
+            <h3>Project 1 - Predictive Modeling</h3>
+            <p>A predictive model built using Python and Scikit-learn, applied to forecast future trends in sales data. Technologies used: Python, Scikit-learn, Pandas.</p>
+        </div>
+        <div class="project-item">
+            <img src="project2.jpg" alt="Project 2 Image">
+            <h3>Project 2 - Sentiment Analysis</h3>
+            <p>Sentiment analysis project using Natural Language Processing (NLP) techniques on Twitter data. Technologies used: Python, NLTK, TensorFlow.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</section>
+
+<footer>
+    <p>Data Science & ML Portfolio - Showcasing Data Science and ML projects.</p>
+    <p>Navigation: <a href="index.html">Home</a> | <a href="#projects">Projects</a></p>
+</footer>
+
+</body>
+</html>

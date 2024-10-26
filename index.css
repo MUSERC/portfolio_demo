@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #1DB954; /* Green logo/title */
+    font-family: 'Orbitron', sans-serif; /* Add the new font */
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.social-icons a {
+    color: #1DB954;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1DB954; /* Change to Spotify green on hover */
+}
+
+.social-icons img {
+    width: 40px; /* Make the icons a uniform size */
+    height: 40px;
+    object-fit: contain; /* Ensures the image fits properly without being stretched */
+    background-color: transparent; /* Ensure there's no unwanted background */
+    border-radius: 5px; /* You can make this more or less rounded based on preference */
+}
